@@ -1,0 +1,34 @@
+/**************************************************************************************************** 
+	Author: 		Colin Van Overschelde 
+	Class: 			CS 290
+	Date:			1/20/2018
+	Assignment: 	HTML/CSS
+	Description: 	Demonstrates using HTML and CSS to create a styled table, ordered list, div
+					and 2 forms to submit POST/GET requests
+*****************************************************************************************************/
+
+tbody>tr:nth-of-type(odd){
+	background-color: green;
+}
+
+tbody>tr:nth-of-type(even){
+	background-color: blue;
+}
+
+tbody>tr>th{
+	font-style: italic;
+	font-weight: normal;
+}
+
+.outer-content{
+	padding: 20px;
+	width: 75%;
+	background-color: #f45dab;
+}
+
+.inner-content{
+	width: 75%;
+	background-color: blue;
+	margin: auto;
+	text-align: center;
+}

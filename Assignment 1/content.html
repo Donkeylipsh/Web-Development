@@ -1,0 +1,155 @@
+<!-- 
+	Author: 		Colin Van Overschelde 
+	Class: 			CS 290
+	Date:			1/20/2018
+	Assignment: 	HTML/CSS
+	Description: 	Demonstrates using HTML and CSS to create a styled table, ordered list, div
+					and 2 forms to submit POST/GET requests
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset=UTF-8>
+		<title>HW Assignment: HTML/CSS</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	
+	<body>
+		<section>
+			<table>
+				<caption>League Leaders</caption>
+				<thead>
+					<tr>
+						<th></th>
+						<th>BA</th>
+						<th>OBP</th>
+						<th>SLG</th>
+						<th>OPS</th>
+						<th>HR</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Aaron Judge</th>
+						<td>.284</td>
+						<td>.422</td>
+						<td>.627</td>
+						<td>1.049</td>
+						<td>52</td>
+					</td>
+					<tr>
+						<th>Jose Altuve</th>
+						<td>.346</td>
+						<td>.410</td>
+						<td>.547</td>
+						<td>.957</td>
+						<td>24</td>
+					</td>
+					<tr>
+						<th>Anthony Rendon</th>
+						<td>.301</td>
+						<td>.403</td>
+						<td>.533</td>
+						<td>.936</td>
+						<td>25</td>
+					</td>
+					<tr>
+						<th>Giancarlo Stanton</th>
+						<td>.281</td>
+						<td>.376</td>
+						<td>.631</td>
+						<td>1.007</td>
+						<td>59</td>
+					</td>
+					<tr>
+						<th>Mike Trout</th>
+						<td>.306</td>
+						<td>.442</td>
+						<td>.629</td>
+						<td>1.071</td>
+						<td>33</td>
+					</td>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan=2>Footer 1</td>
+						<td colspan=4>Footer 2</td>
+					</tr>
+				</tfoot>
+			</table>
+		</section>
+		<section>
+			<h3>Worst Star Wars Movies</h3>
+			<ol>
+				<li>Attack of the Clones</li>
+				<li>The Last Jedi</li>
+				<li>The Phantom Menace</li>
+			</ol>
+		</section>
+		<div class="outer-content">
+			<div class="inner-content">Here is some content.</div>
+		</div>
+		<section>
+			<form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="post">
+				<fieldset id="post">
+					<legend>Some POST Data</legend>
+					<br />
+					<label>Text here:
+						<input type="text" name="text_input">
+					</label>
+					<br />
+					<label>Number here:
+						<input type="number" name="numerical_input">
+					</label>
+					<br />
+					<label>Password here:
+						<input type="password" name="password_input">
+					</label>
+					<p>Favorite Candy:
+						<br />
+						<label>
+							<input type="radio" name="candy" value="Snickers" />Snickers</label>
+						<br />
+						<label>
+							<input type="radio" name="candy" value="Skittles" />Skittles</label>
+						<br />
+						<label>
+							<input type="radio" name="candy" value="Mentos" />Mentos</label>
+					</p>
+					<input type="submit" value="Submit POST" />
+				</fieldset>	
+			</form>
+			<br />
+			<form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="post">
+				<fieldset id="get">
+					<legend>Some GET Data</legend>
+					<br />
+					<label>Text here:
+						<input type="text" name="text_input">
+					</label>
+					<br />
+					<label>Number here:
+						<input type="number" name="numerical_input">
+					</label>
+					<br />
+					<label>Password here:
+						<input type="password" name="password_input">
+					</label>
+					<p>Favorite Candy:
+						<br />
+						<label>
+							<input type="radio" name="candy" value="Snickers" />Snickers</label>
+						<br />
+						<label>
+							<input type="radio" name="candy" value="Skittles" />Skittles</label>
+						<br />
+						<label>
+							<input type="radio" name="candy" value="Mentos" />Mentos</label>
+					</p>
+					<input type="submit" value="Submit GET" />
+				</fieldset>	
+			</form>
+		</section>
+	</body>
+</html>
