@@ -1,0 +1,14 @@
+/***************************************************************************************************
+ * Author: Colin Van Overschelde 
+ * Date: 2/18/2018
+ * Description: ajaxStyle.css adds basic style to the objects in AjaxInteractions.html
+ ***************************************************************************************************/
+
+#weather-results{
+	visibility: hidden;
+}
+
+th, td{
+	border: solid;
+	border-width: thin;
+}

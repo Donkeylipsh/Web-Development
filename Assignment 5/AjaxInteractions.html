@@ -1,0 +1,66 @@
+<!--************************************************************************************************
+ * Author: Colin Van Overschelde 
+ * Date: 2/18/2018
+ * Description: AjaxInteractions.html creates and displays 2 forms for the user to interact with
+ *************************************************************************************************-->
+<!DOCTYPE html>
+<head>
+
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="ajaxStyle.css" type="text/css">
+</head>
+
+<body>
+	<div id="doc-body">
+		<h1>Ajax Interactions</h1>
+		<p>AJAX Interactions demonstrates using HTML forms, CSS and JavaScript to make asynchronous requests
+		</p>
+		<h2>Open Weather</h2>
+		<form id="open-weather-by-name">
+			<h3>Get Weather by US City Name</h3>
+			<label>Enter US city name: <input type="text" name="city-name" id="city"></input>
+			<button id="get-weather-by-city">Get Weather</button>
+		</form>
+		<form id="open-weather-by-zip">
+			<h3>Get Weather by Zip Code</h3>
+			<label>Enter zip code: <input type="text" name="zip-code" id="zip"></input>
+			<button id="get-weather-by-zip">Get Weather</button>
+		</form>
+		<div id="weather-results">
+			<h3>Weather Report for...</h3>
+			<table>
+				<tr>
+					<th>Current Temp</th>
+					<th>Condition</th>
+					<th>Humidity</th>
+					<th>Pressure</th>
+				</tr>
+				<tr>
+					<td id="temp"></td>
+					<td id="condition"></td>
+					<td id="humidity"></td>
+					<td id="pressure"></td>
+				</tr>
+			</table>
+		</div>
+		<h2>httpBin</h2>
+		<form id="httpBin">
+			<h3>POST Demonstration</h3>
+			<button id="send-post">Send POST Request</button>
+			<h4>Response Headers<h4>
+			<p id="post-response"></p>
+			<dl>
+				<dt>Accept</dt><dd id="accept"></dd>
+				<dt>Accept-Encoding</dt><dd id="accept-encoding"></dd>
+				<dt>Accept-Language</dt><dd id="accept-language"></dd>
+				<dt>Connection</dt><dd id="connection"></dd>
+				<dt>Content-Length</dt><dd id="content-length"></dd>
+				<dt>Content-Type</dt><dd id="content-type"></dd>
+				<dt>Host</dt><dd id="host"></dd>
+				<dt>Origin</dt><dd id="origin"></dd>
+				<dt>User-Agent</dt><dd id="user-agent"></dd>
+			</dl>
+		</form>
+	</div>
+	<script src="ajaxRequests.js"></script>
+</body>
