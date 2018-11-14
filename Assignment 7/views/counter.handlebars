@@ -1,0 +1,21 @@
+<h1>You have visited this page: {{count}} times</h1>
+<form action="/count" method="post">
+	<input type="submit" name="command" value="resetCount">
+</form>
+
+<!--<script>
+
+	document.getElementById('reset-count').addEventListener('click', function(){
+		event.preventDefault();
+		
+		var req = new XMLHttpRequest();
+		req.open("POST", "/count", true);
+		req.setRequestHeader("Content-Type", "application/json");
+		req.addEventListener("load", function(){
+			console.log(JSON.parse(req.responseText));
+		});
+		var payload = '{"reset": "yes"}';
+		req.send(payload);
+	});
+
+</script> -->
